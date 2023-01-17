@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "812765240596",
+    "project_id": "exchanger-585e7",
+    "storage_bucket": "exchanger-585e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812765240596:android:52a3b4cddb3870becc3601",
+        "android_client_info": {
+          "package_name": "com.example.exchanger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "812765240596-plqdciinsnauvsdqrvdv0bbevqt8hui2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfiipU4ucKigs1VMS1FIbJoAbfdx5Cs_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "812765240596-plqdciinsnauvsdqrvdv0bbevqt8hui2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

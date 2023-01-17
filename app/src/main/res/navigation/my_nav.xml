@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/sign_in">
+    <fragment
+        android:id="@+id/registration_fragment"
+        android:name="com.example.exchanger.registration_fragment"
+        android:label="fragment_registration_fragment"
+        tools:layout="@layout/fragment_registration_fragment" >
+        <action
+            android:id="@+id/action_registration_fragment_to_sign_in"
+            app:destination="@id/sign_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/resetpass_fragment"
+        android:name="com.example.exchanger.resetpass_fragment"
+        android:label="fragment_resetpass_fragment"
+        tools:layout="@layout/fragment_resetpass_fragment" >
+        <action
+            android:id="@+id/action_resetpass_fragment_to_sign_in"
+            app:destination="@id/sign_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/sign_in"
+        android:name="com.example.exchanger.sign_in"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_sign_in_to_registration_fragment"
+            app:destination="@id/registration_fragment" />
+        <action
+            android:id="@+id/action_sign_in_to_resetpass_fragment"
+            app:destination="@id/resetpass_fragment" />
+        <action
+            android:id="@+id/action_sign_in_to_main_fragment"
+            app:destination="@id/main_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/main_fragment"
+        android:name="com.example.exchanger.main_fragment"
+        android:label="fragment_main_fragment"
+        tools:layout="@layout/fragment_main_fragment" />
+</navigation>

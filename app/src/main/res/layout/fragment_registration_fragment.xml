@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registration_fragment"
+    android:background="@drawable/ocean_themed_gradient_blur_background_0509">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="85dp"
+        android:fontFamily="@font/custom"
+        android:text="Registration..."
+        android:textColor="#F4EBE8"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="@id/linearLayout3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/custom"
+            android:textColor="#2E2F2F"
+            android:layout_weight="1"
+            android:hint="Name"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/surname"
+            android:layout_width="match_parent"
+            android:textColor="#2E2F2F"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Surname"
+            android:fontFamily="@font/custom"
+            android:text="" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#2E2F2F"
+            android:ems="10"
+            android:hint="ID Number"
+            android:fontFamily="@font/custom"
+            android:text="" />
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#2E2F2F"
+            android:ems="10"
+            android:hint="City"
+            android:fontFamily="@font/custom"
+            android:text="" />
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#2E2F2F"
+            android:ems="10"
+            android:fontFamily="@font/custom"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#2E2F2F"
+            android:ems="10"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:fontFamily="@font/custom"
+            android:text=""/>
+
+        <EditText
+            android:id="@+id/password2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#2E2F2F"
+            android:fontFamily="@font/custom"
+            android:ems="10"
+            android:hint="Repeat password"
+            android:inputType="textPassword"
+            android:text="" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#2E2F2F"
+            android:fontFamily="@font/custom"
+            android:text="Privace Police" />
+
+        <Button
+            android:id="@+id/registration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2E2F2F"
+            android:text="Registration"
+            android:fontFamily="@font/custom"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
